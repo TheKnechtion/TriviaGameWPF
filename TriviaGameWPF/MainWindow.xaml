@@ -1,0 +1,52 @@
+﻿<Window x:Class="TriviaGameWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriviaGameWPF"
+        mc:Ignorable="d"
+        Title="Character Customization Example" Height="450" Width="600" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="Label" Content="TRIVIA NIGHT!!" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36" Height="64" Width="505"/>
+        <Button x:Name="BtnSubmit" Content="Check Answers" HorizontalAlignment="Left" Margin="81,337,0,0" VerticalAlignment="Top" Width="117" Click="BtnSubmit_Click" Height="30"/>
+        <WrapPanel x:Name="Options" HorizontalAlignment="Left" Height="226" Margin="0,98,0,0" VerticalAlignment="Top" Width="592">
+            <Label x:Name="lblQuestion1" Content="Question 1: What game was estimated to be installed more than Microsoft's 95?" Width="584" FontWeight="Bold" />
+            <RadioButton x:Name="RbDoom" Content="Doom" GroupName="Question1" Width="116" Checked="Question1_Checked" />
+            <RadioButton x:Name="RbQuake" Content="Quake" GroupName="Question1" Width="116" Checked="Question1_Checked" />
+            <RadioButton x:Name="RbDaikatana" Content="Daikatana" GroupName="Question1" Width="116" Checked="Question1_Checked" />
+            <RadioButton x:Name="RbDune" Content="Dune" GroupName="Question1" Width="116" Checked="Question1_Checked" />
+
+            <Label x:Name="lblQuestion2" Content="Question 2: In The Holy Grail, what is the first gift requested by The Nights Who Say 'Ni'?" Width="590" FontWeight="Bold"/>
+            <RadioButton x:Name="RbHerring" Content="A Herring" GroupName="Question2" Width="116" Checked="Question2_Checked" />
+            <RadioButton x:Name="RbHolyGrenade" Content="Holy Grenades" GroupName="Question2" Width="116" Checked="Question2_Checked" />
+            <RadioButton x:Name="RbShrub" Content="Shrubbery" GroupName="Question2" Width="116" Checked="Question2_Checked" />
+            <RadioButton x:Name="RbTree" Content="To cut down a tree" GroupName="Question2" Width="116" Checked="Question2_Checked" />
+
+            <Label x:Name="lblQuestion3" Content="Question 3: What was the quest of the knights to find in the Holy Grail?" Width="595" FontWeight="Bold"/>
+            <RadioButton x:Name="RbHGrail" Content="The Holy Grail" GroupName="Question3" Width="116" Checked="Question3_Checked" />
+            <RadioButton x:Name="RbExcaliber" Content="Excaliber" GroupName="Question3" Width="116" Checked="Question3_Checked" />
+            <RadioButton x:Name="RbRtable" Content="The round table" GroupName="Question3" Width="116" Checked="Question3_Checked" />
+            <RadioButton x:Name="RbHGrenade" Content="Holy hand grenades" GroupName="Question3" Width="127" Checked="Question3_Checked" />
+
+            <Label x:Name="lblQuestion4" Content="Question 4: What is the tallest building in the world?" Width="595" FontWeight="Bold"/>
+            <RadioButton x:Name="RbEmpireState" Content="Empire State" GroupName="Question4" Width="116" Checked="Question4_Checked" />
+            <RadioButton x:Name="RbSearsTower" Content="Sears Tower" GroupName="Question4" Width="116" Checked="Question4_Checked" />
+            <RadioButton x:Name="RbCryslus" Content="Cryslus Building" GroupName="Question4" Width="116" Checked="Question4_Checked" />
+            <RadioButton x:Name="RbBurj" Content="Burj Khalifa" GroupName="Question4" Width="127" Checked="Question4_Checked" />
+
+            <Label x:Name="lblQuestion5" Content="Question 5: On what Year did humanity first land on the moon?" Width="595" FontWeight="Bold"/>
+            <RadioButton x:Name="Rb54" Content="1954" GroupName="Question5" Width="116" Checked="Question5_Checked" />
+            <RadioButton x:Name="Rb72" Content="1972" GroupName="Question5" Width="116" Checked="Question5_Checked" />
+            <RadioButton x:Name="Rb69" Content="1969" GroupName="Question5" Width="116" Checked="Question5_Checked" />
+            <RadioButton x:Name="Rb64" Content="1964" GroupName="Question5" Width="127" Checked="Question5_Checked" />
+
+        </WrapPanel>
+
+        <TextBox x:Name="inName" HorizontalAlignment="Left" Height="23" Margin="73,69,0,0" TextWrapping="Wrap" Text="Enter your name here." VerticalAlignment="Top" Width="145" TextChanged="inName_TextChanged"/>
+        <Label x:Name="Label_Copy" Content="Welcome to" HorizontalAlignment="Left" Margin="66,0,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="24" Height="64" Width="505"/>
+
+
+
+
+    </Grid>
+</Window>
